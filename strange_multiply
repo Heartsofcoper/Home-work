@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+void strange_multiply() {
+	int i = 0;
+	int j = 0;
+	int n, m;
+	cin>>n>>m;
+
+	if ((n> 0 & m> 0) || (n < 0 & m < 0)) {
+		while (i < m) {
+			j = j + n;
+			i++;
+		}
+		cout << j;
+	}
+
+
+	if ((n == 0) || (m == 0)) {
+		cout << 0;
+	}
+	if ((n > 0 & m < 0) || (n < 0 & m > 0)) {
+		while (i < m) {
+			j = j - n;
+			i++;
+		}
+		cout << j;
+	}
+}
+int main()
+{
+	strange_multiply();
+	return 0;}
