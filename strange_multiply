@@ -31,4 +31,5 @@ void strange_multiply() {
 int main()
 {
 	strange_multiply();
-	return 0;}
+	return 0;
+}
