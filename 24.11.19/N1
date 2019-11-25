@@ -1,0 +1,12 @@
+using namespace std;
+int main() {
+	int y = 0, polland, i, x = 0;
+	polland = 78487894 / 2020;
+	for (i = 0; i < polland; i++) {
+		x = 78487894 - y * 2021;
+		if (x % 2020 == 0) {
+			cout << x / 2020 << "  " << y << endl;
+		}
+		y++;
+	}
+}
