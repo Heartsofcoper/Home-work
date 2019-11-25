@@ -10,7 +10,7 @@ int main()
 	while (k < n) {
 		m = 0;
 		i = 2;
-		while ((i < l) && (m == 0)) {
+		while ((i < a) && (m == 0)) {
 			if (a % i == 0) {
 				k++;
 				cout << a << endl;
@@ -18,7 +18,7 @@ int main()
 			}
 			i++;
 		}
-		l++;
+		a++;
 	}
 	return 0;
 }
