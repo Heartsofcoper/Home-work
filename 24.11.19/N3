@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int n, i = 1, k = 0, a = 1, m;
+	cin >> n;
+
+	while (k < n) {
+		m = 0;
+		i = 2;
+		while ((i < l) && (m == 0)) {
+			if (a % i == 0) {
+				k++;
+				cout << a << endl;
+				m = 1;
+			}
+			i++;
+		}
+		l++;
+	}
+	return 0;
+}
