@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+struct array {
+int size;
+int* data;
+array (int size = 0) {
+data = new int [size];
+}
+~ array () {
+delete [] data;
+}
+array ( const array & a) {
+size = a.size;
+data = new int[size];
+for (int i = 0; i < size; i++)
+data[i] = a.data[i];
+}
+const array & operator = (const array & a) {
+if (this == &a) return *this;
+delete [] data;
+size = a.size;
+data = new int[size];
+for (int i = 0; i < size; i++)
+data[i] = a.data[i];
+return *this;
+}
+};
+int main() {
+array arr1(1);
+arr1.data[0] = 3;
+array arr2(1);
+arr2 = arr1;
+cout<<arr2.data[0];
+}
