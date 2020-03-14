@@ -1,0 +1,22 @@
+#include <iostream>
+#include <list>
+#include <iterator>
+using namespace std;
+int main () {
+list <int> lest = {1,2,3,4,5};
+cout<<"empty or not:"<<lest.empty;
+cout<<"size:"<<lest.size;
+cout<<"max size:"<<lest.max_size;
+lest.push_back(0);
+lest.sort ();
+lest.pop_back();
+list <string> lest1;
+list <int> lest1={6,7,8,9}
+lest.merge(lest1);
+lest.sort ();
+lest.push_front(0);
+lest.push_back(9);
+lest.unique();
+lest.pop_front ();
+for (it=lest.begin();it!=lest.end();it++) cout<<(*it)<<" ";
+}
