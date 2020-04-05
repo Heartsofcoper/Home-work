@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+	int e = 0, i = 1;
+	int x, y;
+
+	std::cin >> x >> y;
+
+	while (i != 0) {
+		if ((x % 10) != (y % 10)) {
+			e++;
+		}
+		x = (x - (x % 10)) / 10;
+		y = (y - (y % 10)) / 10;
+		if ((x == 0) && (y == 0)) {
+			i = 0;
+			std::cout << e;
+		}
+		if (((x == 0) && (y != 0)) | ((x != 0) && (y == 0))) {
+			i = 0;
+			std::cout << "Error";
+		}
+	}
+}
